@@ -13,7 +13,7 @@ output1 = './model/wiki_model'
 # output2 = './vector/wiki_vector'
 
 print("Training the Model...")
-model = Word2Vec(LineSentence(segmentationPath), size=2000, window=7,
+model = Word2Vec(LineSentence(segmentationPath), size=1000, window=7,
                  min_count=2, workers=multiprocessing.cpu_count())
 model.save(output1)
 # model.wv.save_word2vec_format(output2, binary=False)

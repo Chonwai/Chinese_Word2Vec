@@ -1,1 +1,1 @@
-mkdir dataset && model && vector
+mkdir dataset model vector

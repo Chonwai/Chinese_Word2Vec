@@ -12,7 +12,7 @@ def main():
 
     logging.basicConfig(
         format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    wiki_corpus = WikiCorpus(sys.argv[1], dictionary={}, article_min_tokens=10)
+    wiki_corpus = WikiCorpus(sys.argv[1], dictionary={}, article_min_tokens=5)
     texts_num = 0
 
     with open("./dataset/wiki_texts.txt", 'w', encoding='utf-8') as output:
